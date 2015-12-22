@@ -1,9 +1,9 @@
-FROM debian:8.1
+FROM debian:jessie
 
-MAINTAINER Vincenzo FERME <info@vincenzoferme.it>
+MAINTAINER André Cruz <andre@cabine.org>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV RANCHER_COMPOSE_VERSION v0.2.6
+ENV RANCHER_COMPOSE_VERSION v0.6.2
 
 RUN apt-get update -q \
 	&& apt-get install -y -q --no-install-recommends ca-certificates tar wget \
